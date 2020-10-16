@@ -214,3 +214,621 @@ apt-cache search devmapper
 apt-get install fuse fuse-dbg libfuse-dev
 apt-get install libdevmapper1.02.1 libdevmapper-dev
 reboot
+cryptsetup luksOpen /opt/rsfirm.img secret_device
+mount /dev/mapper/secret_device /firmware/
+cd /firmware/
+ls
+cd system/
+ls
+cd /
+ls
+umount /firmware/
+cryptsetup luksClose secret_device
+cd /opt/
+ls
+cd system/
+ls
+cd agent/
+ls
+vim agent.py 
+cd /
+ls
+cd bin
+ls
+cd /opt/
+ls
+cd system/
+ls
+cd agent/
+sqlite3 agent.db 
+cat /proc/cpuinfo 
+cd /opt/system/
+ls
+cd agent/
+ls
+vim pre_register.py 
+ls
+vim randomfile.sh 
+chmod +x randomfile.sh 
+./randomfile.sh 
+ls
+vim file.txt 
+vim rs_pubkey.key 
+cd /opt/rc.lo
+cd /etc/rc.local 
+vim /etc/rc.local 
+cd /opt
+ls
+dd if=/dev/zero of=rsimg2.img bs=1M count=5
+cd system/
+ls
+cd agent/
+ls
+vim randomfile.sh 
+./randomfile.sh 
+cd /usr/local/bin
+l
+sls
+ls
+vim indicator 
+man base64
+cd -
+vim randomfile.sh 
+./randomfile.sh 
+ls
+cd -
+vim indicator 
+cd /opt
+ls
+cryptsetup luksFormat rsimg2.img /usr/local/bin/indicator 
+cd /usr/local/bin
+ls
+cd ..
+cd bin
+l
+vim rsimg 
+./rsimg 
+vim rsimg 
+./rsimg 
+ping 8.8.8.8
+cd /opt/
+ls
+vim /usr/bin/rsimg 
+cd /usr/bin/
+./rsimg 
+mkfs.ext4 /dev/mapper/reconsentinel 
+rmrsimg 
+rsimg 
+cd /firmware/
+ls
+cd ..
+cd /usr/bin/
+nuitka --recurse-all rsimg 
+ls
+rm rsimg.exe 
+rm -rf rsimg.build/
+vim rsimg 
+cd /opt/
+ls
+rm rsfirm.img 
+rm rsimg2.img 
+ls
+cd /
+ls
+cd firmware/
+ls
+/usr/bin/rmrsimg 
+cd /
+ls
+reboot
+cd /firmware/
+ls
+df -h
+dd if=/dev/zero of=rsfirm.img bs=1M count=10
+cryptsetup luksFormat rsfirm.img /usr/local/bin/indicator 
+ls
+cryptsetup luksOpen /firmware/rsfirm.img --key-file=/usr/local/bin/indicator 
+cryptsetup luksOpen /firmware/rsfirm.img --key-file=/usr/local/bin/indicator reconsentinel
+mkfs.ext4 /dev/mapper/reconsentinel 
+mount /dev/mapper/reconsentinel /tmp
+cd /opt/
+ls
+mv system/ /tmp/
+umount /tmp/
+cd /
+mount /dev/mapper/reconsentinel /opt
+cd /opt/
+ls
+cd system/
+ls
+ps axuww
+cd /usr/bin/
+ls
+vim rsimg 
+vim /etc/rc.local 
+vim rmrsimg 
+cd /etc/rc6.d/
+ls
+ls 0las
+ls -las
+cat README 
+ln K99Firmware /usr/bin/rmrsimg 
+ln -s K99Firmware /usr/bin/rmrsimg 
+ln -s /usr/bin/rmrsimg K99Firmware
+ls 0la
+ls -las
+reboot
+cd /etc/init.d/
+l
+vim LCD_Startup 
+cd /opt/
+cd system/
+ls
+cd agent/
+ls
+cp I2C_LCD_driver.py /usr/bin
+cp lcd_display.py /usr/bin
+cd /usr/bin
+dmesg
+ls
+nuitka --recurse-all lcd_display.py 
+mv lcd_display.exe lcd_display
+./lcd_display fuck off
+ls
+rm I2C_LCD_driver.py 
+rm lcd_display.py 
+rm -rf lcd_display.build/
+./lcd_display ass hole
+vim /etc/rc.local 
+reboot
+cd /opt/
+ls
+cd system/
+ls
+vim /etc/rc.local 
+ps auxww
+cd /etc/init
+ls
+cd ..
+ls
+vim issue
+vim issue.net 
+vp issue issue.net 
+cp issue issue.net 
+reboot
+cd /etc/issue
+vim /etc/issue
+vim /etc/issue.net 
+cd /etc/ssh/
+ls
+vim sshd_config 
+cd ..
+ls
+cd /var/run
+ls
+vim motd.dynamic 
+cd /etc
+cd update-motd.d/
+ls
+ls -las
+vim 00-header 
+mkdir old
+mv 00-header old/
+ls
+vim 05-figlet 
+ln -s /etc/issue 20-issue
+ls 0las
+ls -las
+mv 20-issue 51-issue
+ls
+exit
+cd /etc/update-motd.d/
+l
+sls
+ls -las
+mv 51-issue 60-issue
+rm 60-issue 
+vim 10-help-text 
+vim 60-issue
+chmod 766 60-issue 
+ls
+exit
+cd /etc/update-motd.d/
+vim 60-issue 
+./60-issue 
+exit
+vim /etc/issue
+exit
+cd /etc/update-motd.d/
+ls
+vim 10-help-text 
+vim 50-landscape-sysinfo 
+exit
+vim /etc/update-motd.d/50-landscape-sysinfo 
+exit
+cd /usr/bin/
+ls
+vim rsimg 
+nuitka --recurse-all rsimg 
+nuitka --recurse-all rmrsimg 
+ls
+rm -rf rmrsimg.build/
+rm -rf rsimg.build/
+rm rsimg
+rm rmrsimg
+mv rsimg.exe rsimg
+mv rmrsimg.exe rmrsimg
+reboot
+halt
+shutdown -Ph now
+cd /opt/
+ls
+cd system/
+;s
+ls
+cd agent/
+ls
+cd /usr/bin/
+l
+ls
+cd -
+ls
+vim randomfile.sh 
+which rm
+cd ..
+cp -a system/ /tmp/
+ls /tmp
+ls
+cd ..
+ls
+cd firmware/
+ls
+dd if=/dev/zero of=test.img bs=1M count=10
+cryptsetup luksFormat test.img --key-file=rsscratch
+cryptsetup luksOpen test.img secdevice --key-file=rsscratch
+mkfs.ext4 /dev/mapper/secdevice 
+l
+mount /dev/mapper/secdevice /mnt/
+cd mnt
+cd /mnt
+cp -a /tmp/system/ .
+ls
+cd ..
+cd firmware/
+umount /mnt
+cryptsetup luksClose secdevice
+ls
+vim rsimg.py 
+./rsimg.py 
+vim rsimg.py 
+cd /tmp/
+ls
+cd -
+ls
+vim rsimg.py 
+./rsimg.py 
+apt-cache search pycrypto
+ls
+vim rsimg.py 
+./rsimg.py 
+vim rsimg.py 
+./rsimg.py 
+vim rsimg.py 
+./rsimg.py 
+ls
+cd /tmp/
+ls
+vim rsscratch 
+cd -
+ls
+vim rsimg.py 
+cd /tmp/
+ls
+rm rsscratch 
+cd -
+./rsimg.py 
+cd -
+ls
+cd -
+vim rsfirm.img 
+vim rsimg.py 
+cryptsetup luksClose secdevice
+./rsimg.py 
+cd /tmp
+ls
+cd -
+umount /tmp
+cd /mnt
+ls
+cd ..
+cd firmware/
+umount /mnt
+cryptsetup luksClose secdevice
+ls
+rm test.img 
+cd /tmp/
+ls
+rm -rf system/
+cp -a /opt/system/ .
+ls
+cd ..
+ls
+cd firmware/
+ls
+vim rsimg.py 
+rm rsfirm.img 
+ls
+dd if=/dev/zero bs=1M count=10 of=rsfirm.img
+cryptsetup luksFormat rsimg.py --key-file=rsscratch
+ls
+vim rsimg.py 
+rm rsimg.py 
+vim rsimg.py 
+ls
+cryptsetup luksFormat rsfirm.img --key-file=rsscratch
+cryptsetup luksOpen rsfirm.img secdevice
+cryptsetup luksOpen rsfirm.img secdevice --key-file=rsscratch
+mkfs.ext4 /dev/mapper/secdevice 
+mount /dev/mapper/secdevice /mnt
+cd /mnt
+ls
+mv /tmp/system/ .
+ls
+cd ..
+umount /mnt/
+cryptsetup luksClose secdevice
+umount /opt
+ls
+cd /firmware/
+ls
+rm rsscratch 
+cp rsimg.py /usr/bin/
+ls
+cd /usr/bin
+ls
+rm rsimg
+mv rsimg.py rsimg
+vim rsimg 
+cd /tmp
+ls
+cd /mnt
+ls
+cd ..
+rmrsimg 
+reboot
+cd /tmp/
+ls
+cd /firmware/
+ls
+rm rsimg.py 
+cd /usr/bin
+ls
+nuitka --recurse-all rsimg 
+ls -las
+ls
+mv rsimg rsimg.py
+mv rsimg.exe rsimg
+rm -rf rsimg.build/
+rmrsimg 
+./rmrsimg 
+./rsimg
+df -h
+cd /opt/
+ls
+cd ..
+reboot
+cd /usr/bin/
+ls
+rm rsimg.py 
+cd /firmware/
+ls
+cd ..
+updatedb
+locate rsscratch
+df
+du -smh *
+apt-get autoremove --purge
+df -g
+cd /opt/
+du -smh *
+cd system/
+ls
+du -smh *
+top
+ps auxww
+cd /opt/system/
+cd agent/
+l
+svim agent.db 
+vim agent.db 
+vim agent.py 
+reboot
+cd /opt/system/agent/
+ls
+rm agent_backup2.py 
+rm agent_backup.py 
+rm initalize.sh 
+ls
+vim lcd_display.py
+nuitka lcd_display.py 
+nuitka --recurse-all lcd_display.py 
+ls
+rm -rf lcd_display.build/
+ls
+mv lcd_display.exe lcd_display
+ls
+vim lcd_display.py 
+./lcd_display ass fuck
+cat /proc/cpuinfo | grep ODROID
+vim update_firmware.py 
+vim lcd_display.py 
+which cat
+vim lcd_display.py 
+which grep
+vim lcd_display.py 
+./lcd_display.py asd 123
+vim lcd_display.py 
+./lcd_display.py asd 123
+vim lcd_display.py 
+
+vim lcd_display.py 
+ls
+./lcd_display "
+./lcd_display "fuck off" "pussy"
+vim lcd_display.py 
+./lcd_display "fuck me" "pussy ass"
+history
+vim /etc/rc.local 
+cd /etc/init.d/LCD_Startup 
+cat /etc/init.d/LCD_Startup 
+apt-get update
+apt-get dist-upgrade -y
+apt-get autoremove --purge -y
+reboot
+cd /firmware/
+l
+cd ..
+cd /opt/
+ls
+cd ..
+ls
+cd /opt/system/
+ls
+cd agent/
+ls
+./clean.py 
+exit
+cd /opt/system/
+ls
+cd agent/
+ls
+./clean.py 
+dmesg
+cd /opt/system/agent/
+./clean.py 
+cd /opt/
+ls
+cd system/
+ls
+cd agent/
+ls
+cat initalize.py 
+./agent_init.py 
+./pre_register.py 
+vim pre_register.py 
+./pre_register.py 
+vim pre_register.py 
+./pre_register.py 
+vim pre_register.py 
+cat pre_register.py 
+s
+ls
+./clean.py 
+passwd
+vim /etc/ssh/sshd_config 
+reboot
+apt-get update
+apt-get clean
+cd /opt/system/agent/
+ls
+./clean.py 
+cd /opt/y
+cd /opt/system/
+ls
+cd agent/
+ls
+./update_firmware.py 
+ls
+./clean.py 
+cd /opt/system/agent/
+vim pre_register.py 
+./clean.py 
+cd /opt/system/agent/
+l
+dmesg
+df
+./clean.py 
+df
+df -h
+cd /opt/system/agent/
+ls
+./clean.py 
+cd /opt/system/agent/
+./clean.py 
+df -h
+/sbin/tune2fs -c 1 /dev/mmcblk1p7 
+cd /etc/default/
+ls
+vim /etc/fstab 
+./clean
+cd /opt/system/agent/
+./clean.py 
+reboot
+cd /opt/system/agent/
+ls
+cd /opt/su
+cd /opt/system/
+ls
+cd agent/
+ls
+rm test_agent.py 
+cd ..
+ls
+cd alert/
+ls
+vim alert_daemon
+vim alert_daemon.py 
+vim alert_daemon2.py 
+rm alert_daemon2.py 
+cd ..
+ls
+cd core/
+ls
+rm gen_html.py 
+rm index.html 
+ls
+cd ..
+ls
+cd countermeasures/
+ls
+cd ..
+ls
+cd log/
+ls
+cd ..
+cd rdd/
+l
+cd ..
+ls
+cd log
+ls
+cd ..
+cd maintenance/
+ls
+cd ..
+ls
+cd scand/
+ls
+cd ..
+cd traps/
+ls
+rm httpconfig_trap.sh 
+rm rdp_trap.sh 
+rm telnet_trap.sh 
+ls
+l
+cd ..
+ls
+cd agent/
+cd ..
+sl
+ls
+rm getfirmware.1 
+rm getfirmwarechecksum.1 
+ls
+cd /opt/system/agent/
+ls
+./clean.py 
+cd /opt/system/agent/
+ls
+./clean.py 
