@@ -1,0 +1,216 @@
+ssh-keygen 
+cd .ssh/
+ls
+vim authorized_keys
+cd /opt/
+ls
+exit
+cd /opt/
+ls
+./rs_bootstrap.sh 
+ls
+vim /etc/rc.local 
+cd system/co
+cd system/core/
+ls
+cd ..
+cd agent/
+vim lcd_display.py 
+./lcd_display.py 
+ls
+./clean.py 
+ifconfig
+/etc/init.d/ssh restart
+cd /opt/system/agent/
+vim lcd_display.py 
+cd ..
+cd rdd
+la
+vim recon_alpha.sh 
+vim recon_charlie.py 
+vim rogue_alpha.py 
+vim recon_alpha.sh 
+vim recon_bravo.py 
+cd ..
+cd scand/
+ls
+vim scan_daemon.py 
+ps uaxww
+df -h
+/sbin/tune2fs -c 1 /dev/mmcblk0p2
+/sbin/tune2fs -c 1 /dev/mmcblk1p7
+/sbin/tune2fs -c 1 /dev/mmcblk1p6
+reboot
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo 'GOVERNOR="conservative"' | sudo tee /etc/default/cpufrequtils
+reboot
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+exit
+top
+apt-get remove unattended-upgrades
+ls
+cd /opt/system/rdd/
+ls
+vim recon_alpha.sh 
+shutdown -Ph now
+i2cdetect -y 1
+i2cdetect -y 0
+i2cdetect -y 2
+i2cdetect -y 3
+i2cdetect -y 4
+i2cdetect -y 1
+reboot
+i2cdetect -y 1
+i2cdetect -y 2
+i2cdetect -y 3
+i2cdetect -y 4
+apt-get install python-smbus
+shutdown -Ph now
+i2cdetect -y 4
+i2cdetect -y 1
+i2cdetect -y 0
+shutdown -Ph now
+cd /opt/system/agent/
+vim lcd_display.py 
+i2cdetect -y 1
+i2cdetect -y 4
+i2cdetect -y 1
+vim test_lcd.py
+chmod +x test_lcd.py 
+./test_lcd.py 
+vim test_lcd.py 
+./test_lcd.py 
+vim test_lcd.py 
+mv test_lcd.py I2C_LCD_driver.py
+vim test_lcd.py
+chmod +x test_lcd.py 
+./test_lcd.py 
+vim test_lcd.py 
+./test_lcd.py 
+ls
+vim I2C_LCD_driver.py
+vim test_lcd.py 
+./test_lcd.py asd 123
+ls
+cp I2C_LCD_driver.py /opt/system/core/
+cp test_lcd.py /opt/system/agent/
+cd /opt/system/agent/
+ls
+mv test_lcd.py lcd_display.py 
+./lcd_display.py ffff 3333
+mv ../core/I2C_LCD_driver.py .
+ls
+./lcd_display.py ffff 3333
+reboot
+vim /etc/rc.local 
+cd /etc/init.d/
+ls
+ln -s /etc/init.d/LCD_Startup /etc/rc5.d/S00LCD_Startup
+reboot
+cd /opt/system/agent/
+vim lcd_display.py 
+reboot
+cd /opt/system/agent/
+ls
+clear
+ls
+top
+cd ..
+cd rdd
+ls
+vim recon_charlie.py 
+cd /opt/system/agent/
+vim agent.py 
+reboot
+shutdown -Ph
+shutdown -Ph now
+cd /opt/system/agent/
+vim agent.py 
+cd ..
+cd rdd/
+ls
+vim rdd_daemon.py 
+vim recon_charlie.py 
+reboot
+sl
+ls
+cp test_lcd.py test_backlight.py
+vim test_backlight.py 
+./test_backlight.py 0
+./test_backlight.py 1
+./test_backlight.py 0
+vim test_backlight.py 
+./test_backlight.py
+./test_backlight.py 1
+vim test_backlight.py 
+./test_backlight.py 1
+ls
+vim I2C_LCD_driver.py
+vim test_backlight.py 
+./test_backlight.py 0
+./test_backlight.py 1
+./test_backlight.py 0
+vim I2C_LCD_driver.py
+cd /opt/system/agent/
+ls
+top
+cd ..
+ls
+cd rdd
+ls
+vim initscan.py 
+cd ../agent/
+l
+vim agent.py 
+cd ..
+cd rdd
+vim recon_charlie.py 
+vim get_hostname.py 
+./get_hostname.py 10.125.0.180
+vim get_hostname.py 
+ls
+vim cd ..
+cd ..
+cd agent/
+ls
+vim randomfile.sh 
+vim test_agent.py 
+shutdown -Ph now
+cd /opt/system/agent/
+./lcd_display.py asd asd
+ps auxww
+exit
+cd op
+cd /opt/
+ls
+rm rs_bootstrap.sh 
+rm rc.local 
+du -smh *
+exit
+cd /opt/
+ls
+cd system/
+ls
+apt-cache search veracrypt
+cd /root/
+ls
+wget https://launchpad.net/veracrypt/trunk/1.21/+download/veracrypt-1.21-raspbian-setup.tar.bz2
+ls
+bunzip2 veracrypt-1.21-raspbian-setup.tar.bz2 
+lsd
+ls
+tar -xvf veracrypt-1.21-raspbian-setup.tar 
+ls
+./veracrypt-1.21-setup-console-armv7 
+veracrypt
+/usr/bin/veracrypt
+/usr/bin/veracrypt -h
+reboot
+veracrypt -h
+ls
+./veracrypt-1.21-setup-console-armv7 
+apt-cache search fuse
+apt-cache search devmapper
+apt-get install fuse fuse-dbg libfuse-dev
+apt-get install libdevmapper1.02.1 libdevmapper-dev
+reboot
